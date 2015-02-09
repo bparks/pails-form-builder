@@ -1,8 +1,10 @@
-<div class="row input-row">
-	<div class="col-md-4">
+<div class="row input-row input-row-<?php echo $model['type']; ?>">
+	<div class="col-md-4 name name-<?php echo $model['type']; ?>">
+		<?php if ($model['type'] != 'hidden' && $model['label'] != ''): ?>
 		<label for="<?php echo $model['data_name']; ?>" title="<?php echo $model['tooltip']; ?>"><?php echo $model['label']; ?>:</label>
+		<?php endif; ?>
 	</div>
-	<div class="col-md-8">
+	<div class="col-md-8 field field-<?php echo $model['type']; ?>">
 		<?php switch ($model['type']):
 			case 'list':
 		?>
@@ -15,7 +17,7 @@
 				break;
 			case 'textarea':
 		?>
-		<textarea name="<?php echo $model['data_name']; ?>" title="<?php echo $model['tooltip']; ?>" style="<?php echo $model['style']; ?>"><?php echo $model['value']; ?></textarea>
+		<textarea name="<?php echo $model['data_name']; ?>" title="<?php echo $model['tooltip']; ?>" style="<?php echo $model['style']; ?>" class="<?php echo $model['class']; ?>"><?php echo $model['value']; ?></textarea>
 		<?php
 				break;
 			case 'radio':
