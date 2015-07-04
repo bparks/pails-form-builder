@@ -1,0 +1,8 @@
+{
+	"name": "pails/form_builder",
+	"autoload": {
+		"files": ["FormBuilder.trait.php"]
+	},
+	"require": {
+	}
+}
