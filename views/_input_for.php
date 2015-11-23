@@ -10,7 +10,7 @@
 		?>
 		<select name="<?php echo $model['data_name']; ?>" title="<?php echo $model['tooltip']; ?>">
 		<?php foreach ($model['options'] as $value => $option): ?>
-			<option value="<?php echo $value; ?>"<?php $value == $model['value'] ? ' selected' : ''; ?>><?php echo $option; ?></option>
+			<option value="<?php echo $value; ?>"<?php echo $value == $model['value'] ? ' selected' : ''; ?>><?php echo $option; ?></option>
 		<?php endforeach; ?>
 		</select>
 		<?php
