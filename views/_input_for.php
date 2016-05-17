@@ -30,7 +30,7 @@
 			case 'check':
 		?>
 		<?php foreach ($model['options'] as $value => $option): ?>
-			<span class="checkbox"><input type="checkbox" name="<?php echo $model['data_name']; ?>[]" value="<?php echo $value; ?>" title="<?php echo $model['tooltip']; ?>"<?php is_array($model['value']) && in_array($value, $model['value']) ? ' selected' : ''; ?> /><?php echo $option; ?></span>
+			<span class="checkbox"><input type="checkbox" name="<?php echo $model['data_name']; ?>[]" value="<?php echo $value; ?>" title="<?php echo $model['tooltip']; ?>"<?php echo is_array($model['value']) && in_array($value, $model['value']) ? ' checked' : ''; ?> /><?php echo $option; ?></span>
 		<?php endforeach; ?>
 		<?php
 				break;
