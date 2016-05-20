@@ -23,7 +23,7 @@
 			case 'radio':
 		?>
 		<?php foreach ($model['options'] as $value => $option): ?>
-			<span class="radio"><input type="radio" name="<?php echo $model['data_name']; ?>" value="<?php echo $value; ?>" title="<?php echo $model['tooltip']; ?>"<?php $value == $model['value'] ? ' selected' : ''; ?> /><?php echo $option; ?></span>
+			<span class="radio"><input type="radio" name="<?php echo $model['data_name']; ?>" value="<?php echo $value; ?>" title="<?php echo $model['tooltip']; ?>"<?php echo $value == $model['value'] ? ' selected' : ''; ?> /><?php echo $option; ?></span>
 		<?php endforeach; ?>
 		<?php
 				break;
